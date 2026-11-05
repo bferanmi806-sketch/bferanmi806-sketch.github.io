@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Enoch Balogun | Mechanical Engineering</title>
+  <meta name="description" content="Enoch is a mechanical engineering student at Cardiff University, interested in AI, energy delivery, and energy systems.">
+  <link rel="canonical" href="https://bferanmi806-sketch.github.io/">
+  <link rel="preload" href="./assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <script src="./dot-particles.js" defer></script>
+</head>
+<body>
+  <header><div class="header-inner">ENOCH BALOGUN</div></header>
+  <main class="stage-wrap">
+    <section class="stage" aria-label="Enoch Balogun's engineering portfolio">
+      <img class="background-photo" src="./assets/photos/17893069825321918.jpg" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+      <canvas class="dot-particles" aria-hidden="true"></canvas>
+      <nav class="file-panel" aria-label="Files"><div class="file-scroll">
+        <button class="file-row" data-action="about"><span class="icon" data-icon="document"></span><span>about.pdf</span></button>
+        <a class="file-row" href="mailto:bferanmi806@gmail.com" title="bferanmi806@gmail.com"><span class="icon" data-icon="file"></span><span>Email me:</span></a>
+        <button class="file-row" data-folder="my-files" aria-expanded="true" aria-controls="my-files"><span class="icon" data-icon="folder"></span><span>My Files</span></button>
+        <div class="disclosure is-open" id="my-files"><div class="disclosure-inner">
+          <div class="tree-row depth-one"><a class="file-row" href="./assets/Enoch_Balogun_CV.pdf" target="_blank" rel="noopener noreferrer" title="Open Enoch Balogun's CV"><span class="icon" data-icon="document"></span><span>CV.pdf</span></a></div>
+          <div class="tree-row depth-one"><button class="file-row" data-folder="projects" aria-expanded="false" aria-controls="projects"><span class="icon" data-icon="folder"></span><span>Projects</span></button></div>
+          <div class="disclosure" id="projects"><div class="disclosure-inner"><div class="tree-row depth-two"><p class="file-row empty-folder">Projects coming soon</p></div></div></div>
+          <div class="tree-row depth-one"><button class="file-row" data-folder="photos" aria-expanded="false" aria-controls="photos"><span class="icon" data-icon="folder"></span><span>Photos</span></button></div>
+          <div class="disclosure" id="photos"><div class="disclosure-inner" id="photo-files"></div></div>
+        </div></div>
+      </div></nav>
+      <div class="background-controls" role="group" aria-label="Background photos" aria-busy="false">
+        <button type="button" data-background-step="-1" aria-label="Previous background photo" title="Previous photo" disabled><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m10 3-5 5 5 5"/></svg></button>
+        <output id="background-count" aria-live="polite" aria-atomic="true">01 / 19</output>
+        <button type="button" data-background-step="1" aria-label="Next background photo" title="Next photo" disabled><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+      </div>
+      <p class="background-message" role="status" hidden></p>
+      <a class="music-player" href="https://github.com/bferanmi806-sketch" target="_blank" rel="noopener noreferrer" aria-label="Open Enoch's GitHub profile"><span class="icon"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 018 3.86c.68 0 1.36.09 2 .26 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8Z"></path></svg></span><span>GitHub</span><span class="icon music-arrow" data-icon="arrow"></span></a>
+      <div class="overlay" id="about-overlay" role="dialog" aria-label="About Enoch Balogun" aria-modal="true" hidden>
+        <article class="about-card overlay-card" tabindex="-1">
+          <button type="button" class="about-close" data-close-about aria-label="Close About"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8m0-8-8 8"/></svg></button>
+          <div class="about-copy">
+            <h2>Enoch Balogun</h2>
+            <p class="about-intro">Mechanical engineering student at Cardiff University.</p>
+            <p>I'm interested in AI, energy delivery, and the systems that power everyday life.</p>
+          </div>
+          <div class="about-photo"><img src="./assets/cable-car.jpg" alt="Cable car travelling between city buildings at sunset"></div>
+        </article>
+      </div>
+      <div class="overlay photo-overlay" id="photo-overlay" role="dialog" aria-label="Photography" aria-modal="true" hidden><div class="photo-card overlay-card" tabindex="-1"><div class="photo-inset"><img id="active-photo" src="./assets/photos/17893069825321918.jpg" alt="17893069825321918.jpg"><div class="photo-inset-shadow"></div></div></div></div>
+    </section>
+  </main>
+</body>
+</html>
